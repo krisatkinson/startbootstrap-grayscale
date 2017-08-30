@@ -52,20 +52,31 @@ a {
   border-bottom: 1px solid transparent; }
   .content-section a:focus, .content-section a:hover {
     border-color: #530973; }
-
+.coden-logo {
+	max-width:350px;
+}
 #mainNav {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: lowercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black; }
+  background-color: black;
+  transition:0.4s ease-in-out;
+}
+#mainNav a:hover {
+	margin-top:-1px;
+	border-bottom:2px solid #8b2cca;
+	text-shadow: 2px 2px 3px rgba(139,44,202, 0.9);
+}
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
     color: white;
     border: 1px solid white; }
   #mainNav .navbar-brand {
-    font-weight: 700; }
+	color:#8b2cca;
+	font-size:19pt;
+    font-weight: 900; }
   #mainNav a {
     color: white; }
   #mainNav .navbar-nav .nav-item {
@@ -92,11 +103,14 @@ a {
       #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        background: black; }
+        border-bottom: 0px solid rgba(255, 255, 255, 0.9);
+        background: #111; 
+		-webkit-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);
+		box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.75);}
       #mainNav .nav-link.active {
         outline: none;
-        background-color: rgba(255, 255, 255, 0.3); }
+        border-bottom:2px solid #8b2cca; }
         #mainNav .nav-link.active:hover {
           color: white; } }
 
@@ -107,7 +121,7 @@ a {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.7)),url("../img/toronto.jpg") no-repeat center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -154,7 +168,7 @@ a {
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+  background: url("../img/download.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -205,12 +219,50 @@ ul.banner-social-buttons {
       ul.banner-social-buttons li:last-child {
         margin-bottom: 0; } }
 
+#testimonials {
+	padding:0px !important;
+}
+.test-left h2 {
+	text-transform: none;
+	color:white;
+}
+.test-left p {
+	color:white;
+}
+.test-left {	
+	padding:100px 10px;
+	background:#333;
+}		
+.test-right {
+  background: url(../img/testimonials.jpg) left bottom;
+  background-size: cover;
+  
+}
+.test-icon-wrap {
+  padding:20px 0;
+  background: url(../img/bricks.jpg) no-repeat center center scroll;
+  background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.slider {
+	padding:30px;
+}
+.logo-icons {
+	max-width:100px;
+}
+	
 footer {
-  padding: 50px 0; }
+  padding: 10px 0; 
+  background:#333;
+  color:#f2f2f2;
+  border-top:1px solid #999;}
   footer p {
     font-size: 14px;
     margin: 0; }
-
+.c-link {
+	color:#8b2cca;
+}
 ::-moz-selection {
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
